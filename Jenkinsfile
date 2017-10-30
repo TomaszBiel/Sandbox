@@ -15,6 +15,7 @@ pipeline {
       }
       steps {
         sleep 1
+        git(credentialsId: 's3-firmwareFullAccess', branch: '\'*/SS-691_test1\'', url: '\'https://github.com/homersoft/FW-MODULO-CI.git\'')
       }
     }
   }
